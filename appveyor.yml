@@ -35,7 +35,7 @@ install:
   - haxelib install linc_luajit
   - haxelib list
   
-before_build_script:
+before_build:
   - cmd: haxelib install actuate
   - haxelib git extension-webm https://github.com/KadeDev/extension-webm
   - lime rebuild extension-webm windows
