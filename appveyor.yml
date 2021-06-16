@@ -36,9 +36,9 @@ install:
   - haxelib list
   
 before_build:
-  - cmd: haxelib install actuate
+  - haxelib install actuate
   - haxelib git extension-webm https://github.com/KadeDev/extension-webm
-  - cmd: lime rebuild extension-webm windows
+  - ps: lime rebuild extension-webm windows
 
 # No tests idk lol
 build_script:
